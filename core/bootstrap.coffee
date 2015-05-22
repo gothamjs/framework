@@ -32,5 +32,31 @@ class Bootstrap
         # Call it ! 
         response.result.call(undefined, params)
 
+      else
+
+        # Convert string to the path
+        path = @_formatPath(response.result)
+
+        # Require controller
+        controller = require 'controllers/' + path
+
+        # Invoke
+        controller = new controller()
+
+        if controller['before']?
+
+          # Run the before method
+          controller.before.call(undefined, params)
+
+        controller.events.call(undefined, params)
+
+
+  _formatPath: (str) ->
+
+    str.split('.').join('/').split('#').join('/')
+
+
+
+
     
 module.exports = Bootstrap
