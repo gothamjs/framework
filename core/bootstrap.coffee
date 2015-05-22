@@ -33,7 +33,7 @@ class Bootstrap
       if _.isFunction(response.result)
 
         # Call it ! 
-        response.result.call(undefined, params)
+        response.result(params)
 
       else
 
@@ -50,9 +50,10 @@ class Bootstrap
         if controller['before']?
 
           # Run the before method
-          controller.before.call(undefined, params)
+          controller.before(params)
 
-        controller.events.call(undefined, params)
+        unless controller._gothamStop
+          controller.events(params)
 
 
   _formatPath: (str) ->

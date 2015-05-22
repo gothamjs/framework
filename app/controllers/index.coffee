@@ -1,12 +1,16 @@
-class Index 
+Controller = require 'core/controller'
 
-  constructor: ->
+class Index extends Controller
+
 
   before: (params) ->
 
-    alert _.hello()
+    @log _.welcome()
+    @stop()
 
   events: ->
+
+    @log "here"
 
 
 
