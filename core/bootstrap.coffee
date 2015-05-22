@@ -8,6 +8,9 @@ class Bootstrap
 
   run: ->
 
+    # Load lodash helpers
+    require 'helpers'
+
     # Init router
     router = new Router(@options.request)
 
@@ -43,6 +46,7 @@ class Bootstrap
         # Invoke
         controller = new controller()
 
+        # Check if we have a method before
         if controller['before']?
 
           # Run the before method
@@ -54,6 +58,7 @@ class Bootstrap
   _formatPath: (str) ->
 
     str.split('.').join('/').split('#').join('/')
+
 
 
 

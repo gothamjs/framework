@@ -4,6 +4,8 @@ class Index
 
   before: (params) ->
 
+    alert _.hello()
+
   events: ->
 
 
