@@ -53,7 +53,7 @@ class Bootstrap
           controller.before(params)
 
         unless controller._gothamStop
-          controller.events(params)
+          controller.run(params)
 
 
   _formatPath: (str) ->

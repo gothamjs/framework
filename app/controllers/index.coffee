@@ -1,4 +1,5 @@
 Controller = require 'core/controller'
+View = require 'core/view'
 
 class Index extends Controller
 
@@ -6,11 +7,13 @@ class Index extends Controller
   before: (params) ->
 
     @log _.welcome()
-    @stop()
 
-  events: ->
+  run: ->
 
-    @log "here"
+    view = new View()
+    console.log view.render('hello')
+
+    
 
 
 
