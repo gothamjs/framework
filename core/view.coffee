@@ -1,7 +1,7 @@
 ##
 # View
 # 
-# Tiny Facade for handlebars
+# Micro Tiny Facade for Handlebars
 #
 # @author  Ges Jeremie <http://www.gesjeremie.fr>
 # @since Version 1.0

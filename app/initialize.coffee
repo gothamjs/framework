@@ -1,9 +1,20 @@
+#--------------------------------------------------------------------------
+# Initialize
+#--------------------------------------------------------------------------
+#
+# It's the main entry of your gotham application. We will require the 
+# bootstrap file and run gotham.
+##
+
 Bootstrap = require 'core/bootstrap'
 
-# If document is ready
+# Hey sir, is the document is ready ?
 $ ->
 
+  # Yep ! We will run gotham !
   bootstrap = new Bootstrap
+
+    # We set the browser's request
     request: window.location.pathname
 
   bootstrap.run()

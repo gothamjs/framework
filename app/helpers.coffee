@@ -9,8 +9,17 @@
 # 
 # @see https://lodash.com/docs#mixin
 ##
-_.mixin welcome: ->
-  "You are using gotham !"
 
-_.mixin goodbye: ->
-  "Have a good day !"
+##
+# Example 
+# 
+# Check if the user is batman
+# 
+# @param [string] Name of the user
+##
+_.mixin isBatman: (name) ->
+  
+  if name.toLowerCase() is "batman"
+    return true
+
+  return false

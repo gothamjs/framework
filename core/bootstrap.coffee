@@ -1,5 +1,3 @@
-Router = require 'core/router'
-
 class Bootstrap
 
   constructor: (options) ->
@@ -8,8 +6,11 @@ class Bootstrap
 
   run: ->
 
-    # Load lodash helpers
+    # Load lo-dash helpers
     require 'helpers'
+
+    # Load handlebars helpers
+    require 'views'
 
     # Init router
     router = new Router(@options.request)
@@ -59,8 +60,6 @@ class Bootstrap
   _formatPath: (str) ->
 
     str.split('.').join('/').split('#').join('/')
-
-
 
 
 
