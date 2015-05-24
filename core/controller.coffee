@@ -1,3 +1,8 @@
+##
+# Controller
+# 
+# Basic controller structure.
+##
 class Controller
 
   # Flag to know if we must run or not the controller

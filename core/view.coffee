@@ -1,17 +1,7 @@
 ##
 # View
 # 
-# Micro Tiny Facade for Handlebars
-#
-# @author  Ges Jeremie <http://www.gesjeremie.fr>
-# @since Version 1.0
-##
-
-##
-# View class
-#
-# Class who manage "views"
-#
+# Micro-Facade for Handlebars.
 ##
 class View 
 
