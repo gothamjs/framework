@@ -12,6 +12,9 @@ class Bootstrap
     # Load handlebars helpers
     require 'views'
 
+    # Load start
+    require 'start'
+
     # Init router
     router = new Router(@options.request)
 

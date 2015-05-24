@@ -51,11 +51,3 @@ module.exports = (route) ->
   # If the url is like www.domain.com/users/22/edit
   # gotham will not run the controller controllers/users/edit.coffee
   ##
-
-  route.match '/admin', ->
-
-    View = require 'core/view'
-    view = new View()
-    console.log view.render 'hello'
-
-  route.match '/', 'index'
