@@ -55,7 +55,8 @@
 </style>
 
 <div class="gothamjs-welcome">
-  <h1>GothamJS</h1>
+
+  <h1><%- @framework %></h1>
   <h3>You just loaded Gotham, it's an impressive start.</h3>
   <p>I'm executed by `start.coffee` and you can find me in `views/hello.hbs`</p>
   <a>Documentation</a>

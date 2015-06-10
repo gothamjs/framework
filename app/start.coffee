@@ -19,8 +19,8 @@ View = require 'core/view'
 # Invoke View
 view = new View()
 
-# Load view 
-hello = view.render 'hello'
+# Load view
+hello = view.render 'hello', {framework: 'GothamJS'}
 
 # Inject in the html
 $('body').html hello

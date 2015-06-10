@@ -9,9 +9,6 @@ class Bootstrap
     # Load lo-dash helpers
     require 'helpers'
 
-    # Load handlebars helpers
-    require 'views'
-
     # Load start
     require 'start'
 
@@ -36,7 +33,7 @@ class Bootstrap
       # Check if we need to call directly the callback
       if _.isFunction(response.result)
 
-        # Call it ! 
+        # Call it !
         response.result(params)
 
       else
@@ -66,5 +63,5 @@ class Bootstrap
 
 
 
-    
+
 module.exports = Bootstrap

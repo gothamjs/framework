@@ -1,9 +1,9 @@
 ##
 # View
-# 
+#
 # Micro-Facade for Handlebars.
 ##
-class View 
+class View
 
   ##
   # Constructor
@@ -20,7 +20,7 @@ class View
   #
   # @param [String] Template to compile
   # @param [Object] Datas to compile with the template
-  # 
+  #
   ##
   render: (template, datas) ->
 
