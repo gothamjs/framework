@@ -24,6 +24,8 @@ class View
   ##
   render: (template, datas) ->
 
+    template = template.split('.').join('/')
+
     template = require 'views/' + template
 
     return template(datas)
