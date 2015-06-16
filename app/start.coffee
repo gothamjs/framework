@@ -20,7 +20,7 @@ View = require 'core/view'
 view = new View()
 
 # Load view
-hello = view.render 'hello', {framework: 'GothamJS'}
+hello = view.render 'hello', {framework: 'Gotham'}
 
 # Inject in the html
 $('body').html hello
