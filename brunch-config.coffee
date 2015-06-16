@@ -20,7 +20,7 @@ exports.config =
   paths:
 
     # Path to build directory that would contain output.
-    public: '../sandbox/public'
+    public: 'public'
 
     # List of all watched paths by brunch.
     watched: ['app', 'vendor', 'core']
