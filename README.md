@@ -10,12 +10,12 @@ Documentation for the framework can be found on the [Gotham website](http://goth
 
 # Community
 
-## Chat
+### Chat
 [![Join the chat at https://gitter.im/gothamjs/framework](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gothamjs/framework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Want to speak with me or the community ? Join us on Gitter.
 
-## Bugs
+### Bugs
 You found a bug ? Let me know in the issues of that repo.
 
 
