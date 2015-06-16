@@ -3,7 +3,7 @@
 #--------------------------------------------------------------------------
 #
 # It's the brunch configuration for Gotham.
-# 
+#
 # @see https://github.com/brunch/brunch/blob/stable/docs/config.md
 #
 ##
@@ -14,26 +14,26 @@ exports.config =
   #--------------------------------------------------------------------------
   #
   # Contains application paths to key directories. Paths are simple strings.
-  # 
+  #
   # @see https://github.com/brunch/brunch/blob/stable/docs/config.md#paths
   ##
-  paths: 
+  paths:
 
     # Path to build directory that would contain output.
     public: '../sandbox/public'
 
     # List of all watched paths by brunch.
-    watched: ['app', 'tests', 'vendor', 'core']
+    watched: ['app', 'vendor', 'core']
 
   #--------------------------------------------------------------------------
   # Files
   #--------------------------------------------------------------------------
   #
-  # Configures handling of application files: 
+  # Configures handling of application files:
   #  - Which compiler would be used on which file
   #  - What name should output file have, etc ...
-  # 
-  # Any paths specified here must be listed in paths.watched as described above, 
+  #
+  # Any paths specified here must be listed in paths.watched as described above,
   # for building.
   #
   # @see https://github.com/brunch/brunch/blob/stable/docs/config.md#files
@@ -46,14 +46,14 @@ exports.config =
         'javascripts/app.js': /^(core|app)/
         'javascripts/vendor.js': /^(vendor|bower_components)/
 
-      order: 
+      order:
         before: []
         after: []
 
     stylesheets:
 
       joinTo:
-        'stylesheets/vendor.css': /^bower_components/
+        'stylesheets/vendor.css': /^(vendor|bower_components)/
 
       order:
         before: []
@@ -66,12 +66,12 @@ exports.config =
   # Notifications
   #--------------------------------------------------------------------------
   #
-  # Enables or disables notifications of: 
+  # Enables or disables notifications of:
   #  - Growl
   #  - Growl for Windows
   #  - terminal-notifier
   #  - libnotify
-  # 
+  #
   #
   # @see https://github.com/brunch/brunch/blob/stable/docs/config.md#files
   ##
