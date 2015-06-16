@@ -1,9 +1,28 @@
+##
+# Bootstrap
+#
+# Skeleton of gotham
+##
 class Bootstrap
 
+  ##
+  # Constructor
+  #
+  # The constructor
+  #
+  ##
   constructor: (options) ->
 
     @options = options
 
+  ##
+  # Run
+  #
+  # Load the helpers, start, init the router,
+  # run the router and execute a callback or
+  # a controller.
+  #
+  ##
   run: ->
 
     # Load lo-dash helpers
@@ -56,12 +75,17 @@ class Bootstrap
         unless controller._gothamStop
           controller.run(params)
 
-
+  ##
+  # Format path
+  #
+  # Will replace all dots by a slash
+  #
+  # @param [String] The string to format
+  #
+  ##
   _formatPath: (str) ->
 
-    str.split('.').join('/').split('#').join('/')
-
-
+    str.split('.').join('/')
 
 
 module.exports = Bootstrap
