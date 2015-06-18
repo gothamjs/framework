@@ -28,6 +28,9 @@ class Bootstrap
     # Load lo-dash helpers
     require 'helpers'
 
+    # Load custom validators
+    require 'validators'
+
     # Load start
     require 'start'
 
