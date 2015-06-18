@@ -1,6 +1,8 @@
+View = require 'core/view'
+
 ##
 # Controller
-# 
+#
 # Basic controller structure.
 ##
 class Controller
@@ -34,7 +36,7 @@ class Controller
   # Shortcut to display a console.log
   #
   # @param [Mixed] Value to display
-  # 
+  #
   ##
   log: (value) ->
 
@@ -48,7 +50,7 @@ class Controller
   # @param [String] Trigger to listen (Ex. click)
   # @param [String] The selector to attach
   # @param [Function] The callback
-  # 
+  #
   ##
   on: (trigger, selector, handler) ->
 
@@ -62,7 +64,7 @@ class Controller
   # @param [String] Trigger to shutdown (Ex. click)
   # @param [String] The selector attached
   # @param [Function] The handler
-  # 
+  #
   ##
   off: (trigger, selector, handler) ->
 
@@ -77,11 +79,25 @@ class Controller
   # @param [String] Trigger to listen (Ex. click)
   # @param [String] The selector to attach
   # @param [Function] The callback
-  # 
+  #
   ##
   delayed: (trigger, selector, handler) ->
 
     $(document).on trigger, selector, handler
 
+  ##
+  # View
+  #
+  # Shortcut to render a view
+  #
+  # @param [String] View to render
+  # @param [Object] Datas to compile in the view
+  #
+  ##
+  view: (template, datas) ->
+
+    view = new View()
+
+    return view.render template, datas
 
 module.exports = Controller
