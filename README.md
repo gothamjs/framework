@@ -1,4 +1,4 @@
-![screenshot](http://gothamjs.io/screen-intro.png)
+![logo](http://gothamjs.io/share.png)
 
 # Gotham JS Framework
 
