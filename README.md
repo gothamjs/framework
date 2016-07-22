@@ -1,5 +1,9 @@
 ![logo](http://gothamjs.io/share.png)
 
+# Notes
+
+This project is quite outdated, still it's working on production for some web applications I built for companies. I will convert the website into a wiki when I will find a bit of time :)
+
 # Gotham JS Framework
 
 Gotham is a web application framework for front-end development. After crafting many web applications using Laravel and Rails I couldn't find a simple front-end framework to manage my Javascript. I wanted to code my front-end with an expressive syntax, install a package and use it without any pain. To require/include functions like you can in others languages, execute something when i need it, and do it all in an elegant, logical way.
